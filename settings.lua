@@ -1,11 +1,11 @@
 -- "true" means enabled, "false" means disabled
 sFilter_Settings = {
-    configmode = false, -- In this mode all icons are shown and can be moved.
-    FontSize = 14,      -- Font size for stacks text
-    r = .8,             -- Text color for stacks text More info: http://www.wowwiki.com/API_FontString_SetTextColor
-    g = .8,
-    b = .8,
-    CountPoint = {"TOP"},            -- Stacks text position. More info: http://www.wowwiki.com/API_Region_SetPoint
+	configmode = false, -- In this mode all icons are shown and can be moved.
+	FontSize = 14,      -- Font size for stacks text
+	r = .8,             -- Text color for stacks text More info: http://www.wowwiki.com/API_FontString_SetTextColor
+	g = .8,
+	b = .8,
+	CountPoint = {"TOP"},            -- Stacks text position. More info: http://www.wowwiki.com/API_Region_SetPoint
 }
 
 --[[ More info about config mode:
@@ -44,32 +44,61 @@ sFilter_Spells = {
     },
     ["SHAMAN"] = {        
     },
-    ["WARLOCK"] = {
-
---caster classes need this
-    -- Misery, Improved Farie Fire
-    {spellId = 33198, spellId2 = 33602, size = 30, unitId = "target", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 670, 227}},
-    -- CoE, Ebon Plaguebringer, Earth and Moon
-    {spellId = 47865, spellId2 = 51735, spellId3 = 48511, size = 30, unitId = "target", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 703, 227}},
-    -- Shadow mastery, Improved Scorch, Winter Chill
-    {spellId = 17800, spellId2 = 22959, spellId3 = 12579, size = 30, unitId = "target", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 735, 227}},
+	["WARLOCK"] = {
+		--Tier bonus
+			--4t10 Devious Minds
+	 		{spellId = 70840, size = 30, unitId = "player", isMine = 1, filter = "HELPFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 767, 344}},
 
 
-    -- CoA, CoD, CoE, CoW, CoT
-    {spellId = 47864, spellId2 = 47867, spellId3 = 47865 , spellId4 = 50511 , spellId5 = 11719, size = 30, unitId = "target", isMine = 1, filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 735, 259}},
-    -- Molten Core (demo), Shadow Trance (affli)
-    {spellId = 47383, spellId2 = 17941, size = 30, unitId = "player", isMine = 1, filter = "HELPFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 703, 344}},
-    -- Decimation (demo), Backdraft (destro), Eradication (affli)
-    {spellId = 63158, spellId2 = 54277, spellId3 = 64371, size = 30, unitId = "player", isMine = 1, filter = "HELPFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 735, 344}},
-    -- Immo/UA
-    {spellId = 47811, spellId2 = 47843, size = 30, unitId = "target", isMine = 1, filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 703, 259}},
-    -- Corruption/SoC
-    {spellId = 47813, spellId2 = 47836, size = 30, unitId = "target", isMine = 1, filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 670, 259}},
-    -- Haunt
-    {spellId = 59164, size = 30, unitId = "target", isMine = 1, filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 767, 259}},
 
-    -- Shadow embrace
-    {spellId = 32391, size = 30, unitId = "target", isMine = 1, filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 767, 227}},
+		--caster classes need this
+			-- Misery, Improved Farie Fire
+			{spellId = 33198, spellId2 = 33602, size = 30, unitId = "target", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 670, 227}},
+
+			-- CoE, Ebon Plaguebringer, Earth and Moon
+			{spellId = 47865, spellId2 = 51735, spellId3 = 48511, size = 30, unitId = "target", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 703, 227}},
+
+			-- Shadow mastery, Improved Scorch, Winter Chill
+			{spellId = 17800, spellId2 = 22959, spellId3 = 12579, size = 30, unitId = "target", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 735, 227}},
+
+
+			-- CoA, CoD, CoE, CoW, CoT
+			{spellId = 47864, spellId2 = 47867, spellId3 = 47865 , spellId4 = 50511 , spellId5 = 11719, size = 30, unitId = "target", isMine = 1, filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 735, 259}},
+
+			-- Molten Core (demo), Shadow Trance (affli)
+			{spellId = 47383, spellId2 = 17941, size = 30, unitId = "player", isMine = 1, filter = "HELPFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 703, 344}},
+
+			-- Decimation (demo), Backdraft (destro), Eradication (affli)
+			{spellId = 63158, spellId2 = 54277, spellId3 = 64371, size = 30, unitId = "player", isMine = 1, filter = "HELPFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 735, 344}},
+
+			-- Immo/UA
+			{spellId = 47811, spellId2 = 47843, size = 30, unitId = "target", isMine = 1, filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 703, 259}},
+
+			-- Corruption/SoC
+			{spellId = 47813, spellId2 = 47836, size = 30, unitId = "target", isMine = 1, filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 670, 259}},
+
+			-- Haunt/Conflagrate DoT
+			{spellId = 59164, spellId2 = 17962, size = 30, unitId = "target", isMine = 1, filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 767, 259}},
+
+			-- Shadow embrace
+			{spellId = 32391, size = 30, unitId = "target", isMine = 1, filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 767, 227}},
+
+	--Important PVE Buffs/DeBuffs
+	--ICC
+	--Lady Deathwhisper
+	--Curse of Torpor (big (de)buff)
+
+	{spellId = 71237, size = 61, unitId = "player", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 622, 244}},
+
+	--BloodQueen Lana`thel
+	--Swarming shadows (big (de)buff)
+	{spellId = 71861, size = 61, unitId = "player", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 622, 244}},
+	
+	--Sindragosa
+	--Unchained Magic 1'st (de)buff
+		{spellId = 69762, size = 30, unitId = "player", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 607, 291}},
+	--Instability (big (de)buff) 
+		{spellId = 69766, size = 61, unitId = "player", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 622, 244}},
 
        }, 
 
