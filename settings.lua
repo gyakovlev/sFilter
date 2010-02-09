@@ -101,7 +101,11 @@ sFilter_Spells = {
 		{spellId = 69766, size = 61, unitId = "player", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 622, 244}},
 	--Mystic Buffet 2'nd (de)buff
 		{spellId = 70127, spellId2 = 70128, spellId3 = 72528, spellId4 = 72529, spellId5 = 72530, size = 30, unitId = "player", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 637, 291}},
-
+	--Lich King
+	--Necrotic plague (big (de)buff)
+		{spellId = 70337, spellId2 = 70338, size = 61, unitId = "player", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 622, 244}},
+		{spellId = 73785, spellId2 = 73786, spellId3 = 73787, size = 61, unitId = "player", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 622, 244}},
+		{spellId = 73912, spellId2 = 73913, spellId3 = 73914, size = 61, unitId = "player", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 622, 244}},
        }, 
 
     ["WARRIOR"] = {
