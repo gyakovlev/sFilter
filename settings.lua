@@ -96,9 +96,11 @@ sFilter_Spells = {
 	
 	--Sindragosa
 	--Unchained Magic 1'st (de)buff
-		{spellId = 69762, size = 30, unitId = "player", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 607, 291}},
+		{spellId = 69762, size = 30, unitId = "player", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 606, 291}},
 	--Instability (big (de)buff) 
 		{spellId = 69766, size = 61, unitId = "player", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 622, 244}},
+	--Mystic Buffet 2'nd (de)buff
+		{spellId = 70127, spellId2 = 70128, spellId3 = 72528, spellId4 = 72529, spellId5 = 72530, size = 30, unitId = "player", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 637, 291}},
 
        }, 
 
