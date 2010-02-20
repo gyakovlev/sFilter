@@ -1,11 +1,11 @@
 -- "true" means enabled, "false" means disabled
 sFilter_Settings = {
 	configmode = false, -- In this mode all icons are shown and can be moved.
-	FontSize = 14,      -- Font size for stacks text
+	FontSize = 11,      -- Font size for stacks text
 	r = .8,             -- Text color for stacks text More info: http://www.wowwiki.com/API_FontString_SetTextColor
 	g = .8,
 	b = .8,
-	CountPoint = {"TOP"},            -- Stacks text position. More info: http://www.wowwiki.com/API_Region_SetPoint
+	CountPoint = {"BOTTOMRIGHT"},            -- Stacks text position. More info: http://www.wowwiki.com/API_Region_SetPoint
 }
 
 --[[ More info about config mode:
@@ -47,7 +47,7 @@ sFilter_Spells = {
 	["WARLOCK"] = {
 		--Tier bonus
 			--4t10 Devious Minds
-	 		{spellId = 70840, size = 30, unitId = "player", isMine = 1, filter = "HELPFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 767, 344}},
+	 		{spellId = 70840, size = 30, unitId = "player", isMine = 1, filter = "HELPFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 660, 465}},
 
 
 
@@ -63,22 +63,22 @@ sFilter_Spells = {
 
 
 			-- CoA, CoD, CoE, CoW, CoT
-			{spellId = 47864, spellId2 = 47867, spellId3 = 47865 , spellId4 = 50511 , spellId5 = 11719, size = 30, unitId = "target", isMine = 1, filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 735, 259}},
+			{spellId = 47864, spellId2 = 47867, spellId3 = 47865 , spellId4 = 50511 , spellId5 = 11719, size = 30, unitId = "target", isMine = 1, filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 845, 465}},
 
 			-- Molten Core (demo), Shadow Trance (affli)
-			{spellId = 47383, spellId2 = 17941, size = 30, unitId = "player", isMine = 1, filter = "HELPFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 703, 344}},
+			{spellId = 47383, spellId2 = 17941, size = 30, unitId = "player", isMine = 1, filter = "HELPFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 596, 465}},
 
 			-- Decimation (demo), Backdraft (destro), Eradication (affli)
-			{spellId = 63158, spellId2 = 54277, spellId3 = 64371, size = 30, unitId = "player", isMine = 1, filter = "HELPFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 735, 344}},
+			{spellId = 63158, spellId2 = 54277, spellId3 = 64371, size = 30, unitId = "player", isMine = 1, filter = "HELPFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 628, 465}},
 
 			-- Immo/UA
-			{spellId = 47811, spellId2 = 47843, size = 30, unitId = "target", isMine = 1, filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 703, 259}},
+			{spellId = 47811, spellId2 = 47843, size = 30, unitId = "target", isMine = 1, filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 813, 465}},
 
 			-- Corruption/SoC
-			{spellId = 47813, spellId2 = 47836, size = 30, unitId = "target", isMine = 1, filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 670, 259}},
+			{spellId = 47813, spellId2 = 47836, size = 30, unitId = "target", isMine = 1, filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 780, 465}},
 
 			-- Haunt/Conflagrate DoT
-			{spellId = 59164, spellId2 = 17962, size = 30, unitId = "target", isMine = 1, filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 767, 259}},
+			{spellId = 59164, spellId2 = 17962, size = 30, unitId = "target", isMine = 1, filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 877, 465}},
 
 			-- Shadow embrace
 			{spellId = 32391, size = 30, unitId = "target", isMine = 1, filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 767, 227}},
@@ -88,24 +88,24 @@ sFilter_Spells = {
 	--Lady Deathwhisper
 	--Curse of Torpor (big (de)buff)
 
-	{spellId = 71237, size = 61, unitId = "player", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 622, 244}},
+	{spellId = 71237, size = 61, unitId = "player", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 796, 513}},
 
 	--BloodQueen Lana`thel
 	--Swarming shadows (big (de)buff)
-	{spellId = 71861, size = 61, unitId = "player", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 622, 244}},
+	{spellId = 71861, size = 61, unitId = "player", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 796, 513}},
 	
 	--Sindragosa
 	--Unchained Magic 1'st (de)buff
-		{spellId = 69762, size = 30, unitId = "player", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 606, 291}},
+		{spellId = 69762, size = 30, unitId = "player", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 845, 510}},
 	--Instability (big (de)buff) 
-		{spellId = 69766, size = 61, unitId = "player", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 622, 244}},
+		{spellId = 69766, size = 61, unitId = "player", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 796, 513}},
 	--Mystic Buffet 2'nd (de)buff
-		{spellId = 70127, spellId2 = 70128, spellId3 = 72528, spellId4 = 72529, spellId5 = 72530, size = 30, unitId = "player", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 637, 291}},
+		{spellId = 70127, spellId2 = 70128, spellId3 = 72528, spellId4 = 72529, spellId5 = 72530, size = 30, unitId = "player", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 877, 510}},
 	--Lich King
 	--Necrotic plague (big (de)buff)
-		{spellId = 70337, spellId2 = 70338, size = 61, unitId = "player", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 622, 244}},
-		{spellId = 73785, spellId2 = 73786, spellId3 = 73787, size = 61, unitId = "player", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 622, 244}},
-		{spellId = 73912, spellId2 = 73913, spellId3 = 73914, size = 61, unitId = "player", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 622, 244}},
+		{spellId = 70337, spellId2 = 70338, size = 61, unitId = "player", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 796, 513}},
+		{spellId = 73785, spellId2 = 73786, spellId3 = 73787, size = 61, unitId = "player", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 796, 513}},
+		{spellId = 73912, spellId2 = 73913, spellId3 = 73914, size = 61, unitId = "player", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 796, 513}},
        }, 
 
     ["WARRIOR"] = {
