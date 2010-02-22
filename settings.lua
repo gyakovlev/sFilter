@@ -53,7 +53,7 @@ sFilter_Spells = {
 
 		--caster classes need this
 			-- Misery, Improved Farie Fire
-			{spellId = 33198, spellId2 = 33602, size = 30, unitId = "target", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 670, 227}},
+			{spellId = 33198, spellId2 = 770, size = 30, unitId = "target", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 670, 227}},
 
 			-- CoE, Ebon Plaguebringer, Earth and Moon
 			{spellId = 47865, spellId2 = 51735, spellId3 = 48511, size = 30, unitId = "target", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 703, 227}},
@@ -65,8 +65,8 @@ sFilter_Spells = {
 			-- CoA, CoD, CoE, CoW, CoT
 			{spellId = 47864, spellId2 = 47867, spellId3 = 47865 , spellId4 = 50511 , spellId5 = 11719, size = 30, unitId = "target", isMine = 1, filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 845, 465}},
 
-			-- Molten Core (demo), Shadow Trance (affli)
-			{spellId = 47383, spellId2 = 17941, size = 30, unitId = "player", isMine = 1, filter = "HELPFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 596, 465}},
+			-- Molten Core (demo), Shadow Trance (affli), Backlash (destro)
+			{spellId = 47383, spellId2 = 17941, spellId3 = 34936, size = 30, unitId = "player", isMine = 1, filter = "HELPFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 596, 465}},
 
 			-- Decimation (demo), Backdraft (destro), Eradication (affli)
 			{spellId = 63158, spellId2 = 54277, spellId3 = 64371, size = 30, unitId = "player", isMine = 1, filter = "HELPFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 628, 465}},

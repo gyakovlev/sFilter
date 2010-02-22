@@ -3,6 +3,7 @@
 	Copyright (c) 2009, Nils Ruesch
 	All rights reserved.
 	Edited by ALZA
+	Tukui adaptation by Affli.
 ]]
 
 local s = sFilter_Settings
