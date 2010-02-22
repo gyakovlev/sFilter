@@ -1,6 +1,6 @@
 -- "true" means enabled, "false" means disabled
 sFilter_Settings = {
-	configmode = false, -- In this mode all icons are shown and can be moved.
+	configmode = true, -- In this mode all icons are shown and can be moved.
 	FontSize = 11,      -- Font size for stacks text
 	r = .8,             -- Text color for stacks text More info: http://www.wowwiki.com/API_FontString_SetTextColor
 	g = .8,
@@ -39,6 +39,36 @@ sFilter_Spells = {
     ["PALADIN"] = {
     },
     ["PRIEST"] = { 
+		--caster classes need this
+			-- Misery, Improved Farie Fire
+			{spellId = 33198, spellId2 = 770, size = 30, unitId = "target", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 670, 227}},
+
+			-- CoE, Ebon Plaguebringer, Earth and Moon
+			{spellId = 47865, spellId2 = 51735, spellId3 = 48511, size = 30, unitId = "target", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 703, 227}},
+
+			-- Shadow mastery, Improved Scorch, Winter Chill
+			{spellId = 17800, spellId2 = 22959, spellId3 = 12579, size = 30, unitId = "target", isMine = "all", filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 735, 227}},
+
+
+			-- Shadow word:Pain
+			{spellId = 48125, size = 30, unitId = "target", isMine = 1, filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 780, 465}},
+
+			-- Vampiric touch
+			{spellId = 48160, size = 30, unitId = "target", isMine = 1, filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 813, 465}},
+
+			-- Devouring plague
+			{spellId = 48300, size = 30, unitId = "target", isMine = 1, filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 845, 465}},
+
+			-- Mind Sear
+			{spellId = 53023, size = 30, unitId = "target", isMine = 1, filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 877, 465}},
+
+
+
+			-- Shadow weaving
+			{spellId = 15258, size = 30, unitId = "player", isMine = 1, filter = "HELPFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 767, 227}},
+			
+			
+
     },
     ["ROGUE"] = {
     },
