@@ -1,6 +1,6 @@
 -- "true" means enabled, "false" means disabled
 sFilter_Settings = {
-	configmode = true, -- In this mode all icons are shown and can be moved.
+	configmode = false, -- In this mode all icons are shown and can be moved.
 	FontSize = 11,      -- Font size for stacks text
 	r = .8,             -- Text color for stacks text More info: http://www.wowwiki.com/API_FontString_SetTextColor
 	g = .8,
@@ -95,11 +95,15 @@ sFilter_Spells = {
 			-- CoA, CoD, CoE, CoW, CoT
 			{spellId = 47864, spellId2 = 47867, spellId3 = 47865 , spellId4 = 50511 , spellId5 = 11719, size = 30, unitId = "target", isMine = 1, filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 845, 465}},
 
+			-- CoEx
+			{spellId = 18223, size = 30, unitId = "target", isMine = 1, filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 845, 465}},
+
+
 			-- Molten Core (demo), Shadow Trance (affli), Backlash (destro)
-			{spellId = 47383, spellId2 = 17941, spellId3 = 34936, size = 30, unitId = "player", isMine = 1, filter = "HELPFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 596, 465}},
+			{spellId = 71165, spellId2 = 17941, spellId3 = 34936, size = 30, unitId = "player", isMine = 1, filter = "HELPFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 596, 465}},
 
 			-- Decimation (demo), Backdraft (destro), Eradication (affli)
-			{spellId = 63158, spellId2 = 54277, spellId3 = 64371, size = 30, unitId = "player", isMine = 1, filter = "HELPFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 628, 465}},
+			{spellId = 63167, spellId2 = 54277, spellId3 = 64371, size = 30, unitId = "player", isMine = 1, filter = "HELPFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 628, 465}},
 
 			-- Immo/UA
 			{spellId = 47811, spellId2 = 47843, size = 30, unitId = "target", isMine = 1, filter = "HARMFUL", setPoint = {"CENTER", UIParent, "BOTTOMLEFT", 813, 465}},
